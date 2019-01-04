@@ -1,0 +1,27 @@
+string str; //khai bao mot chuoi
+            char[] arr1;
+            int pos, l, ln, c = 0;
+
+            Console.Write("\nLay chuoi con trong C#:\n");
+            Console.Write("--------------------------------------------\n");
+
+            Console.Write("Nhap mot chuoi: ");
+            str = Console.ReadLine();
+            ln = str.Length;
+            arr1 = str.ToCharArray(0, ln);
+
+            Console.Write("Nhap vi tri bat dau de lay chuoi con: ");
+            pos = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Nhap do dai cua chuoi con: ");
+            l = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Chuoi con thu duoc tu chuoi ban dau la: ");
+            while (c < l)
+            {
+                Console.Write(arr1[pos + c - 1]);
+                c++;
+            }
+            Console.Write("\n\n");
+
+            Console.ReadKey();
